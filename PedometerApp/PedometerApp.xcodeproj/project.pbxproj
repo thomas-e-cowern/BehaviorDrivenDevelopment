@@ -10,6 +10,7 @@
 		4118CC0927F1FB0000EB3100 /* PedometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118CC0827F1FB0000EB3100 /* PedometerViewModel.swift */; };
 		4118CC0C27F1FE3F00EB3100 /* Pedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118CC0B27F1FE3F00EB3100 /* Pedometer.swift */; };
 		4118CC0F27F1FF8600EB3100 /* MockPedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118CC0E27F1FF8600EB3100 /* MockPedometer.swift */; };
+		4118CC1227F2047C00EB3100 /* CMPedometerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4118CC1127F2047C00EB3100 /* CMPedometerExtension.swift */; };
 		8DAA935324392DC100A4B6D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA935224392DC100A4B6D1 /* AppDelegate.swift */; };
 		8DAA935524392DC100A4B6D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA935424392DC100A4B6D1 /* SceneDelegate.swift */; };
 		8DAA935724392DC100A4B6D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA935624392DC100A4B6D1 /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 		4118CC0827F1FB0000EB3100 /* PedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewModel.swift; sourceTree = "<group>"; };
 		4118CC0B27F1FE3F00EB3100 /* Pedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedometer.swift; sourceTree = "<group>"; };
 		4118CC0E27F1FF8600EB3100 /* MockPedometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPedometer.swift; sourceTree = "<group>"; };
+		4118CC1127F2047C00EB3100 /* CMPedometerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMPedometerExtension.swift; sourceTree = "<group>"; };
 		8DAA934F24392DC100A4B6D1 /* PedometerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedometerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAA935224392DC100A4B6D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DAA935424392DC100A4B6D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		4118CC1027F2045700EB3100 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4118CC1127F2047C00EB3100 /* CMPedometerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8DAA934624392DC000A4B6D1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		8DAA935124392DC100A4B6D1 /* PedometerApp */ = {
 			isa = PBXGroup;
 			children = (
+				4118CC1027F2045700EB3100 /* Extensions */,
 				4118CC0A27F1FE2500EB3100 /* Pedometer */,
 				4118CC0527F1FAA300EB3100 /* ViewModels */,
 				8DAA935224392DC100A4B6D1 /* AppDelegate.swift */,
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4118CC0C27F1FE3F00EB3100 /* Pedometer.swift in Sources */,
+				4118CC1227F2047C00EB3100 /* CMPedometerExtension.swift in Sources */,
 				4118CC0927F1FB0000EB3100 /* PedometerViewModel.swift in Sources */,
 				8DAA935324392DC100A4B6D1 /* AppDelegate.swift in Sources */,
 				8DAA935524392DC100A4B6D1 /* SceneDelegate.swift in Sources */,

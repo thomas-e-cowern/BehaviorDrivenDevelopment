@@ -9,5 +9,8 @@
 import Foundation
 
 protocol Pedomter {
+    
+    var pedometerAvailable: Bool { get }
+    
     func start()
 }
