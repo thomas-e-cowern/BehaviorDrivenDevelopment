@@ -10,8 +10,10 @@ import Foundation
 @testable import PedometerApp
 
 class MockPedometer: Pedomter {
+    var permissionDeclined: Bool = false
     
-    var pedometerAvailable: Bool = true
+    
+    var pedometerAvailable: Bool = false
     
     private (set) var started: Bool = false
     

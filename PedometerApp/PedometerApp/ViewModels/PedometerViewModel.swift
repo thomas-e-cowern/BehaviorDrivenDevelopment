@@ -9,15 +9,27 @@
 import Foundation
 import CoreMotion
 
+enum AppState {
+    case notStarted
+    case inProgress
+}
+
 class PedometerViewModel {
     
     var pedometer: Pedomter
+    var appState: AppState = .notStarted
     
     init(pedometer: Pedomter) {
         self.pedometer = pedometer
     }
     
     func startPedometer () {
+        
+        guard pedometer.pedometerAvailable else {
+            appState = .notStarted
+            return
+        }
+        
         pedometer.start()
     }
     

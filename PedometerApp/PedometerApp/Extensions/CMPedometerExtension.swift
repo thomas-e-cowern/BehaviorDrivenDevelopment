@@ -10,6 +10,10 @@ import Foundation
 import CoreMotion
 
 extension CMPedometer: Pedomter {
+    var permissionDeclined: Bool {
+        return CMPedometer.authorizationStatus() == .denied
+    }
+    
     var pedometerAvailable: Bool {
         return CMPedometer.isStepCountingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.authorizationStatus() != .restricted
     }
