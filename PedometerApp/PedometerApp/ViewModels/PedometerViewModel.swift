@@ -11,6 +11,10 @@ import CoreMotion
 
 class PedometerViewModel {
     
-    var pedometer: CMPedometer
+    var pedometer: Pedomter
+    
+    init(pedometer: Pedomter) {
+        self.pedometer = pedometer
+    }
     
 }

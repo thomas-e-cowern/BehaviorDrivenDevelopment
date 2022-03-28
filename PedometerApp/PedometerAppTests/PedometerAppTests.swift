@@ -8,12 +8,13 @@
 
 import XCTest
 import CoreMotion
+@testable import PedometerApp
 
 class PedometerAppTests: XCTestCase {
     
     func tests_StartsPedometer () {
         
-        let pedometerVM = PedometerViewModel()
+        let pedometerVM = PedometerViewModel(pedometer: <#Pedomter#>)
         
         pedometerVM.startPedometer()
         
