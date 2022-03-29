@@ -13,7 +13,7 @@ class MockPedometer: Pedomter {
     var permissionDeclined: Bool = false
     
     
-    var pedometerAvailable: Bool = false
+    var pedometerAvailable: Bool = true
     
     private (set) var started: Bool = false
     

@@ -57,4 +57,20 @@ class PedometerAppTests: XCTestCase {
         
     }
     
+    func test_whenAuthIsDeniedAfterStartGeneratesError () {
+        
+        let mockPedometer = MockPedometer()
+        let pedometerVM = PedometerViewModel(pedometer: mockPedometer)
+        
+        let expectation = expectation(for: NSPredicate(block: { (thing, _) -> Bool in
+            let vm = thing as! PedometerViewModel
+            
+            return vm.appState == .authorized
+        }), evaluatedWith: pedometerVM, handler: nil)
+        
+        pedometerVM.startPedometer()
+        
+        wait(for: [expectation], timeout: 2.0)
+    }
+    
 }
