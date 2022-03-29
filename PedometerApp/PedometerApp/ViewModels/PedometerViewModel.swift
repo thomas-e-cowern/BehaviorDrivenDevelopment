@@ -37,7 +37,9 @@ class PedometerViewModel {
         
         self.appState = .inProgress
         
-        pedometer.start()
+        pedometer.start { (error) in
+            // More to come
+        }
     }
     
 }

@@ -10,6 +10,10 @@ import Foundation
 @testable import PedometerApp
 
 class MockPedometer: Pedomter {
+    func start(completion: @escaping (Error?) -> Void) {
+        // More to come
+    }
+    
     var permissionDeclined: Bool = false
     
     
